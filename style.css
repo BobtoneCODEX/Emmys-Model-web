@@ -1,0 +1,41 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 25px;
+  color: blue;
+  font-family: 'Pacifico', cursive;
+}
+
+.logo img {
+  width: 40px;   
+  height: 40px;  
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo left, nav right */
+  padding: 10px 30px; /* optional spacing */
+  background: #fff; /* or your background */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.navbar a {
+  margin-left: 20px; /* spacing between links */
+  text-decoration: none;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+
+
+
+
