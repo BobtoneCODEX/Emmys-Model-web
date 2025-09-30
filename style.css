@@ -1,41 +1,180 @@
+.navbar a,
+.logo a{
+  text-decoration: none ;
+}
+
 .logo {
+  display: flex;          /* puts logo image + text side by side */
+  align-items: center;    /* aligns them vertically in the middle */
+  gap: 10px;              /* small space between image and text */
+}
+
+
+.logo a {
+  font-size: 25px; 
+  font-weight: 600; 
+  color: black;
+  
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;  /* removes underline */
+}
+
+
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar a{
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.navdiv{
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-weight: bold;
-  font-size: 25px;
+  justify-content: space-between;
+}
+
+
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 20px;
+
+}
+
+.logo a {
+  font-size: 25px; 
+  font-weight: 600; 
   color: blue;
   font-family: 'Pacifico', cursive;
 }
+li{
+  list-style: none; 
+  display: inline-block;
 
-.logo img {
-  width: 40px;   
-  height: 40px;  
 }
 
-.header {
+li {
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+
+.btn1 {
+  background: none;
+  border: 3px solid blue;
+  color: blue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+   margin-left: 130px;
+}
+
+.btn2 {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: flex-end;
+  margin-left: 10px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .nav-actions {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* logo left, nav right */
-  padding: 10px 30px; /* optional spacing */
-  background: #fff; /* or your background */
+  gap: 340px; 
 }
 
-.logo {
+.navbar {
+  display: flex;
+  justify-content: center;  
+  flex: 1;                  
+  gap: 30px;                
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btn-group {
   display: flex;
   align-items: center;
   gap: 10px; 
 }
 
-.navbar a {
-  margin-left: 20px; /* spacing between links */
-  text-decoration: none;
-  color: #333;
+.btn1 {
+  background: none;
+  border: 3px solid blue;
+  color: blue;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: bold;
+   margin-left: 130px;
 }
 
-
-
-
-
+.btn2 {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: flex-end;
+  margin-left: 10px;
+  
+}
+  */
