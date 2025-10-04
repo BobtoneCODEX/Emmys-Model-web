@@ -1,6 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
 .navbar a,
 .logo a{
   text-decoration: none ;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 
 .logo {
@@ -42,6 +56,7 @@
 
 
 
+
 .logo img {
   width: 40px;
   height: 40px;
@@ -70,111 +85,160 @@ li {
 }
 
 
-.btn1 {
-  background: none;
-  border: 3px solid blue;
-  color: blue;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-   margin-left: 130px;
-}
 
-.btn2 {
-  background-color: blue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  justify-content: flex-end;
-  margin-left: 10px;
+/* home */
+
+#home {
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url('assets/back.jpg');
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(7, 7, 8, 0.3), rgba(5, 4, 46, 0.7)), url('assets/back.jpg');
+  background-repeat: no-repeat;       /* prevent repeating */
+  background-size: cover;             /* make it fill the section */
+  background-position: center;   
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
   
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 340px; 
+.hero-image {
+  text-align: center;
+  max-width: 600px;   /* shrink the hero container */
+  margin: 0 auto;
+  padding: 40px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;  
-  flex: 1;                  
-  gap: 30px;                
+.hero-image img {
+  width: 300px;   /* shrink the image */
+  height: auto;   /* keeps proportions */
 }
 
-.navbar a {
+
+#home h1 {
+  color: white;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width: 100%;
+  color: white;
+  font-size: 0.9rem;
+  margin: 20px auto;
+  line-height: 25px;
+  letter-spacing: 1px;
+ margin-right: 20%;
+}
+
+#home .btn333{
+  margin-top: 30px;
+}
+
+#home a {
   text-decoration: none;
-  color: #333;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 17px;
-  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: white;
+  font-weight: 600;
+  border-radius: 5px;
 }
+  
 
-.btn-group {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-}
 
-.btn1 {
-  background: none;
-  border: 3px solid blue;
-  color: blue;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-   margin-left: 130px;
-}
-
-.btn2 {
-  background-color: blue;
-  color: white;
+ button.blue {
+  background-color: rgb(21, 21, 100); 
   border: none;
-  padding: 10px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 16px;
   font-weight: bold;
-  justify-content: flex-end;
-  margin-left: 10px;
+  color: white;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+   transition: 0.3s ease;
+ }
+
+
+ button.blue:hover {
+  color: rgb(21, 21, 100);
+  background-color: white;
+ }
+
+
+  button.yellow {
+    background-color: yellow; 
+    border: none;
+    font-weight: bold;
+    color: rgb(21, 21, 100);
+    padding: 10px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+
+
+ button.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color:  white;
+ }
+
+
+
+
+/* features */
+
+#features {
+  padding: 5vw 8vw 0 8vw;
+  text-align: center;
+}
+
+
+#features h1 {
+  font-size: 2rem;
+  color: rgb(21, 21, 100);
+  font-weight: 600;
+}
+
+#features .fea-box {
+   background-color: #F9F9FF;
+   text-align: start;
+}
+
+
+#features .fea-box i{
+  font-size: 2.3rem;
+  color: rgb(44, 44, 80);
+}
+
+
+#features .fea-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46, 46, 59);
+  padding: 13px 0 7px 0;
+}
+
+
+#features .fea-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 87);
   
 }
-  */
+
+
+
+
+
+
