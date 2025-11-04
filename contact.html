@@ -12,6 +12,9 @@
     crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="style.css">
+
+
+ 
 </head>
 <body>
 
@@ -38,14 +41,17 @@
 
  <div class="contact-container">
     <h1>Contact Us</h1>
-    
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <input type="text" placeholder="Subject" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button id="submit">send Message</button>
-    </form>
+    <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="16b30520-ddf9-4f7f-967f-e34cfc388bd4">
+
+  <input type="text" name="name" placeholder="Your Name" id="name" required>
+  <input type="email" name="email" placeholder="Your Email" id="email" required>
+  <input type="text" name="subject" placeholder="Subject" id="subject" required>
+  <textarea name="message" placeholder="Your Message" id="message" required></textarea>
+
+  <button type="submit" id="submit">Send Message</button>
+</form>
+
 
     <div class="contact-info">
       <p>Or reach us directly:</p>
@@ -53,12 +59,6 @@
       <p>Phone: <a href="tel:+2348107794138">+234 806 923 7874</a></p>
     </div>
   </div>
-
-
-
-
-
-
 
 
  
